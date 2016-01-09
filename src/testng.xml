@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<suite name="">-->
+    <suite name="SuiteName" parallel="classes" thread-count="3">
+
+    <listeners>
+        <!--<listener class-name="org.ExtentReporterNG" />-->
+        <listener class-name="com.MyReporter" />
+    </listeners>
+    <test name="Test" allow-return-values="true">
+        <parameters>
+            <parameter name = "browser" value ="chrome"/>
+        </parameters>
+        <classes>
+            <class name="com.flight.SearchFlight" />
+            <class name="com.flight.BookFlight" />
+            <class name="com.flight.FlightStatus" />
+            <class name="com.flight.BookHotel" />
+            <!--<class name="com.FlightTC2" />-->
+        </classes>
+    </test>
+
+</suite>
